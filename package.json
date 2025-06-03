@@ -1,0 +1,13 @@
+{
+  "name": "api-tickets",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "type":"module",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+ 
+  "author": "frederico nakajima",
+  "license": "ISC",
+  "description": "api de gerenciamento de tickets de suporte"
+}

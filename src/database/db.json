@@ -1,0 +1,32 @@
+{
+  "tickets": [
+    {
+      "id": "754b2c09-9b58-4536-a0d3-52e8e0799e77",
+      "equipment": "monitor",
+      "description": "monitor desliga de repente",
+      "user_name": "joão",
+      "status": "open",
+      "created_at": "Tue Jun 03 2025 17:28:01 GMT-0300 (Horário Padrão de Brasília)",
+      "updated_at": "Tue Jun 03 2025 17:28:01 GMT-0300 (Horário Padrão de Brasília)"
+    },
+    {
+      "id": "2d038dfc-368a-4e78-90eb-60ba63989690",
+      "equipment": "fonte",
+      "description": "fonte desliga de repente",
+      "user_name": "alberto",
+      "status": "closed",
+      "created_at": "Tue Jun 03 2025 18:31:05 GMT-0300 (Horário Padrão de Brasília)",
+      "updated_at": "Tue Jun 03 2025 18:31:05 GMT-0300 (Horário Padrão de Brasília)",
+      "solution": "trocamos a fonte por outra de melhor qualidade"
+    },
+    {
+      "id": "d2e36426-c270-4be2-b2ef-040538d8ae86",
+      "equipment": "gabinete",
+      "description": "gabinete quebrou",
+      "user_name": "ana",
+      "status": "open",
+      "created_at": "Tue Jun 03 2025 19:10:08 GMT-0300 (Horário Padrão de Brasília)",
+      "updated_at": "Tue Jun 03 2025 19:10:08 GMT-0300 (Horário Padrão de Brasília)"
+    }
+  ]
+}
