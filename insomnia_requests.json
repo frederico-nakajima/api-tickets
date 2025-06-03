@@ -1,0 +1,165 @@
+type: collection.insomnia.rest/5.0
+name: Support Tickets
+meta:
+  id: wrk_33e215abbb844bf6b46622a6f35dfe73
+  created: 1748950393080
+  modified: 1748950393080
+collection:
+  - url: http://localhost:3333/tickets
+    name: Create
+    meta:
+      id: req_f05cf25b0bb140bea1ec6cc7a73fb5a3
+      created: 1748950447349
+      modified: 1748988605810
+      isPrivate: false
+      sortKey: -1748950447349
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"equipment":"gabinete",
+        	"description":"gabinete quebrou",
+        	"user_name":"ana"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tickets
+    name: Index
+    meta:
+      id: req_a9cbe01a734e429ca744e31d4cfda0dd
+      created: 1748961393724
+      modified: 1748988136623
+      isPrivate: false
+      sortKey: -1748961393724
+    method: GET
+    parameters:
+      - id: pair_f9ba8709e937491890dd849d9a0feec8
+        name: status
+        value: closed
+        disabled: true
+      - id: pair_3f3c090ca7244897b7e89b26544bec29
+        name: status
+        value: open
+        disabled: true
+      - id: pair_d74864b2c4314268a4c7136efe6d7934
+        name: "status "
+        value: open
+        disabled: true
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tickets/a9371662-78b0-47d5-aa82-12ba11bdfca7
+    name: Update
+    meta:
+      id: req_19d6ad8b1bb9419b8205913e55f96c0a
+      created: 1748977019444
+      modified: 1748985472939
+      isPrivate: false
+      sortKey: -1748977019444
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"solution":"equipamnto trocado"
+
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tickets/2d038dfc-368a-4e78-90eb-60ba63989690/close
+    name: Close
+    meta:
+      id: req_925140dfe53a4e38a356d1a795385b2d
+      created: 1748981510551
+      modified: 1748986662341
+      isPrivate: false
+      sortKey: -1748981510551
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"solution":"trocamos a fonte por outra de melhor qualidade"
+        }
+    parameters:
+      - id: pair_4c9cdb34cc9f4ddd9711a9a189f3e85f
+        name: status
+        value: closed
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3333/tickets/4f4e1ebf-50b8-4944-8731-1d37a1fca3ac
+    name: Delete
+    meta:
+      id: req_ba66edee67954e678661c4b670b7e986
+      created: 1748987216831
+      modified: 1748988229464
+      isPrivate: false
+      sortKey: -1748987216831
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_1225251b75ea008d8ede59c6fe03cb77cc269c3b
+    created: 1748950393083
+    modified: 1748950393083
+environments:
+  name: Base Environment
+  meta:
+    id: env_1225251b75ea008d8ede59c6fe03cb77cc269c3b
+    created: 1748950393082
+    modified: 1748950393082
+    isPrivate: false
